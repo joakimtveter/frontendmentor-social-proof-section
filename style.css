@@ -1,0 +1,162 @@
+/* MY STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-clr-dark: hsl(300, 43%, 22%);
+  --primary-clr-light: hsl(333, 80%, 67%);
+  --neutral-clr-dark: hsl(303, 10%, 53%);
+  --neutral-clr-light: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+  background-position: left top, center bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+section {
+  margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--primary-clr-dark);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+}
+
+.section-intro {
+  margin-bottom: 40px;
+  color: var(--neutral-clr-dark);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* RATINGS */
+.ratings {
+  margin-bottom: 50px;
+}
+.rating {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: var(--neutral-clr-light);
+  color: var(--primary-clr-dark);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.star-rating {
+  margin: 10px auto;
+}
+
+/* REVIEWS */
+.review {
+  margin: 20px auto 25px;
+  padding: 20px;
+  background-color: var(--primary-clr-dark);
+  color: var(--clr-white);
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.review header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.reviewer-image {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.reviewer-name {
+  font-weight: 500;
+}
+
+.reviewer-status {
+  color: var(--primary-clr-light);
+}
+
+/*
+PORTRAIT TABLET SIZE
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+LANDSKAPE TABLET SIZE
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+} 
+*/
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, center bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  section {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    text-align: left;
+  }
+
+  .section-header {
+    grid-column: 1 / 4;
+  }
+
+  .ratings {
+    grid-column: 4 / 7;
+  }
+
+  .reviews {
+    grid-column: 1 / 7;
+    display: flex;
+    align-content: space-between;
+  }
+  .review {
+    margin: 0;
+    width: 27%;
+  }
+}
+
+/* STYLES FROM CHALLANGE */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* The designs were created to the following widths:
+
+- Desktop: 1440px */
